@@ -1,0 +1,635 @@
+<?php
+  //require_once("wp-load.php");
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="cleartype" content="on" />
+    <title>VMAK Capital LLC - Investment Redefined</title>
+       
+    <meta name="description" content="Our mission is to equip the world’s
+    traders with the tools, expertise, and
+    systems they need to easily and
+    effectively build their portfolio. Through
+    Multi asset class Diversification
+    Algorithms." />          
+   <!-- <link rel="icon" href="icon.png" type="image/png" />-->
+   <style>
+     .vmak-options-old {
+        font-family: "Barlow", sans-serif;
+        position: relative;
+        top: 22px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: #b4b8cd;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .vmak-options.desktop {
+          display: none;
+        }
+
+        .vmak-options.mobile {
+          top: 16px;
+          display: block !important;
+        }
+      }
+
+      .vmak-options.mobile {
+        display: none;
+      }
+
+      .vmak-options:hover {
+        color: white;
+        cursor: pointer;
+      } 
+      td {
+        padding-right: 1vw;
+      }
+      .tableResults {
+        margin-top:10vh; 
+        font-size: 2vw; 
+        color:white; 
+        margin-left:25%;
+      }
+      .last {
+        margin-bottom:150px;
+        padding-bottom:30px;
+      }     
+      .icons {
+        padding-bottom:10px;
+        height: 120px;
+        width: 120px;
+        margin: 0 auto;
+      }  
+      .vmak-contact {
+        text-align: center;
+        color: white;
+    }  
+    .icons-contact {
+      max-width: 120px;        
+      margin:0 auto;
+      margin-top: 20px;      
+      text-align:center;
+    }
+   
+    .vcp {
+        margin: 40px auto 20px;
+        font-size: 40px;    
+        color:white;
+    }
+    .vcp-dsc {
+        font-size: 20px;        
+        color:white;    
+        margin: 40px auto 20px;    
+    }
+   
+    .live:hover {
+        
+    }
+    .messenger {
+        border-color:#428bca;
+    }
+    .messenger:hover {
+        background-color:#428bca;
+    }
+    .email {
+        border-color: #f9f9f9;
+    }
+    .email:hover {
+        background-color: #f9f9f9;
+    }
+    .contact-block {
+      margin: 10px; 
+      justify-content: space-between;    
+    }
+    .contact-block div  {
+          display:block;
+        }
+    @media screen and (max-width: 400px) {
+        
+        .contact-block  {
+          flex-direction:column;
+        }
+    }
+   </style>  
+    <link rel="stylesheet" href="css/main.css" />   
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700,800,900&display=swap" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script> 
+    <script>
+      function hover(image,nm) {
+        image.src="images/icons/"+nm+".gif";
+        image.style.width="120px";
+        image.style.width="120px";        
+      }
+      function unhover(image,nm) {
+        image.src="images/icons/"+nm+".png";
+      }  
+        function link(url) {
+          var url = "http://vmakcapital.com/"+url;
+          location.href=url;
+        }      
+    </script>        
+  </head>
+  <body>
+    <div class="body locked">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="row asdfas" style="margin-bottom: 0px; padding-bottom: 0px; border-bottom-width: 0px">
+            <div nomargin class="flex dftIKf abcd">
+              <div class="flex" style="width: 400px; justify-content: space-between">
+                <div class="flex sdfsdf" nomargin>
+                  <img
+                    class="main-logo"
+                    src="images/vmak-logo.png"
+                    alt="vmak Logo"
+                    style="min-height: 130px; position: relative; bottom: 35px"
+                  />
+                  <div class="llc">LLC</div>
+                </div>
+              </div>              
+            </div>
+          </div>
+          <div class="row asdfas" style="margin-bottom: 0px; padding-bottom: 0px; border-bottom-width: 0px">
+            <div nomargin class="flex abcd">
+              <div class="flex" style="width: 400px; justify-content: space-between">
+                
+                  <div
+                    class="sc-hTQSVH flex justify-center px-4 iEoGWi signin"
+                    type="submit"
+                    onclick="link('products');"
+                    style="max-width: 190px; padding-bottom:10px; cursor: pointer">
+                    Purchase License Here
+                  </div>
+                  <div
+                    class=" sc-hTQSVH flex justify-center px-4 iEoGWi signin"
+                    type="submit"
+                    onclick="link('affiliates/login')"
+                    style="margin-left: 10px; min-width: 80px; cursor: pointer">
+                    Affiliate Sign In
+                  </div>                                    
+              </div>              
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="dot-nav c-m-r">
+        <div class="circle-holder">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 76.4 76.4"
+            style="enable-background:new 0 0 76.4 76.4;"
+            xml:space="preserve"
+          >
+            <path
+              vector-effect="non-scaling-stroke"
+              class="circle-path"
+              d="M38.2,0.5c20.8,0,37.7,16.9,37.7,37.7S59,75.9,38.2,75.9S0.5,59,0.5,38.2
+                        S17.4,0.5,38.2,0.5z"
+            />
+          </svg>
+        </div>
+        <div class="active"><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+      </nav>
+      <main id="main" class="locked">
+        <div class="view-landing" data-smooth>
+          <div class="hero-intro container destination">
+            <div class="bg-wrapper">
+              <div>
+                <img
+                  class="preload-critical"
+                  data-h-from='{"scale": "1", "z": "0", "opacity": "1", "rotationY": "0", "rotationX": "0", "rotationZ": "0", "x": "0"}'
+                  data-h-mobile-from='{"y": "0"}'
+                  data-to='{"scale": "1.12", "z": "40", "opacity": ".35", "rotationY": "2", "rotationZ": "1", "rotationX": "1", "x": "40"}'
+                  data-mobile-to='{"y": "0"}'
+                  data-dur=".8"
+                  data-mobile-dur="1"
+                  data-preload-desktop="images/panel.jpg"
+                  data-preload-mobile="images/panel-mobile.jpg"
+                />
+              </div>
+            </div>
+            <section class="hero" data-smooth-section>
+              <div class="hero-content" style="opacity: 0">
+                <h1>See How VMAK Can Help Your Trading<br />Fully Automated or Manual</h1>
+                <a onclick="link('webinar')" style="cursor: pointer"><span class="line"></span>Play Webinar Here</a>
+              </div>
+            </section>
+            <section class="page-intro bottom-destination" data-smooth-section>
+              <p class="scroll-enter" data-entrance="headers-large" data-offset=".75" data-offset-mobile="1">
+                Our mission is to equip the world’s traders with the tools, expertise, and systems they need to easily and effectively build their portfolio. Through Multi asset class Diversification Algorithms.                
+              </p><br />              
+              <span class="measure-el"></span>                         
+            </section>
+            
+          </div> 
+          
+          <section class="two-up" data-smooth-section>
+          <div class="container" style="border-bottom: 1px solid #40404c; text-align: center;">
+            <h3 style="margin:0 auto; margin-bottom:36.891px; margin-top:36.891px;" class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+              Year to Date Results
+            </h3>
+          </div>
+            <div class="container">                
+                <div class="left" style="border-bottom: 1px solid #40404c;">                            
+                  <img src="images/results/Image 1.png">
+                </div>
+                <div class="right" style="border-bottom: 1px solid #40404c;">
+                  <img src="images/results/Image 2.png" >
+                </div>
+                <div class="left">            
+                  <img src="images/results/Image 3.png">
+                </div>
+                <div class="right">
+                  <img src="images/results/Image 4.png">
+                </div>
+                <div class="left">            
+                  <img src="images/results/Image 5.png">
+                </div>
+                <div class="right">
+                  <img src="images/results/Image 6.png">
+                </div>
+            </div>
+         </section>   
+          <section class="awareness bottom-destination" data-smooth-section>
+            <div class="container">
+              <div
+                class="img-wrapper scroll-enter"
+                data-entrance="device-fade"
+                data-offset=".72"
+                data-offset-mobile="1"
+              >
+                <img
+                  class="preload-critical"
+                  data-from='{"scale": "1", "rotationY": "0", "x": "0", "rotationX": "0", "rotationZ": "0"}'
+                  data-to='{"scale": "1.1", "rotationY": "9", "x": "40", "rotationX": "4", "rotationZ": "-6"}'
+                  data-dur=".9"
+                  data-mobile-dur="1"
+                  data-preload-desktop="images/discord-pc.jpg"
+                  data-preload-mobile="images/discord-pc-mobile.jpg"
+                />
+              </div>
+              <div class="text-side">
+                <h3 class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                  Stay on the correct side of the market & learn valuable business skills to earn addition income with our private discord.
+                </h3>
+                <p class="copy scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                  Get access to our Discord Bot that corrects your trades in real time. (Forex, Indices, Crypto, Commodities)
+                </p>
+              </div>
+            </div>
+          </section>
+        
+          <section class="design bottom-destination" data-smooth-section>
+            <div class="container">
+                <div class="right">
+                    <h3 class="scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                      Confirm your trading the correct direction on your phone.
+                    </h3>
+                    <p class="copy scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                      Use our Discord Bot on any mobile device to correct your trades in real time + Chat with other traders in our private discord for more trading ideas and learn other sources of income.
+                    </p>
+                  </div>
+              <div class="left scroll-enter" data-entrance="device-fade" data-offset=".72" data-offset-mobile="1">
+                <img
+                  class="preload-critical"
+                  data-from='{"scale": "1", "z": "0", "rotationY": "0", "rotationX": "0", "rotationZ": "0"}'
+                  data-to='{"scale": "1.1", "z": "25", "rotationY": "-8", "rotationX": "3", "rotationZ": "3"}'
+                  data-dur=".5"
+                  data-mobile-dur=".7"
+                  data-preload-desktop="images/discord-mb.jpg"
+                  data-preload-mobile="images/discord-mb-mobile.jpg"
+                />
+              </div>
+              
+            </div>
+          </section>     
+          <section class="awareness bottom-destination" data-smooth-section>
+            <div class="container">
+              <div
+                class="img-wrapper scroll-enter"
+                data-entrance="device-fade"
+                data-offset=".72"
+                data-offset-mobile="1"
+              >
+                <img
+                  class="preload-critical"
+                  data-from='{"scale": "1", "rotationY": "0", "x": "0", "rotationX": "0", "rotationZ": "0"}'
+                  data-to='{"scale": "1.1", "rotationY": "9", "x": "20", "rotationX": "4", "rotationZ": "-6"}'
+                  data-dur=".9"
+                  data-mobile-dur="1"
+                  data-preload-desktop="images/alexa.jpg"
+                  data-preload-mobile="images/alexa-mobile.jpg"
+                />
+              </div>
+              <div class="text-side">
+                <h3 class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                  In bed and don’t want to turn your computer on to take a trade? Use your voice.
+                </h3>
+                <p class="copy scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                  Use our Alexa Skill “VMAK GO” To trigger your trades, See your account balance, and much more using your voice.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="two-up destination" data-smooth-section>
+            <div class="container">
+              <div class="left">
+                <h3 class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                  Follow Our Growing Instagram Page
+                </h3>
+                <div class="resources" style="display:none;">
+                  <div class="wrapper">
+                    <div class="item pos">
+                      <span class="bg"></span><span class="top-text">Total Revenue</span
+                      ><span class="top-text">$21.6B</span>
+                    </div>
+                    <div class="item active pos">
+                      <span class="bg"></span><span class="top-text">Gross Profit</span
+                      ><span class="top-text">$4.84B</span>
+                    </div>
+                    <div class="item neg">
+                      <span class="bg"></span><span class="top-text">Operating Income</span
+                      ><span class="top-text">($388.07M)</span>
+                    </div>
+                    <div class="item neg">
+                      <span class="bg"></span><span class="top-text">Diluted Normalized EPS</span
+                      ><span class="top-text">(5.24/shr)</span>
+                    </div>
+                    <div class="item pos">
+                      <span class="bg"></span><span class="top-text">Total Assets</span
+                      ><span class="top-text">$29.74B</span>
+                    </div>
+                    <div class="item neg">
+                      <span class="bg"></span><span class="top-text">Total Liabilities</span
+                      ><span class="top-text">($24.82B)</span>
+                    </div>
+                    <div class="item pos">
+                      <span class="bg"></span><span class="top-text">Total Equity</span
+                      ><span class="top-text">$4.92B</span>
+                    </div>
+                  </div>
+                </div>
+               <!-- <p class="copy scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                  
+                </p>-->
+                <video width="100%" height="480px;" muted autoplay loop>
+                  <source src="videos/insta.mov" type="video/mp4" />                  
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="right">
+                <h3 class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                  Quick look of what we made
+                </h3>
+                <video width="100%" height="480px;" muted autoplay loop>
+                  <source src="videos/made.mov" type="video/mp4" />                  
+                  Your browser does not support the video tag.
+                </video>
+                <div class="chat-outer" style="display: none;">
+                  <div class="chat">
+                    <div class="messages">
+                      <div class="message from string-f">
+                        Hey, did you see the <strong>$FB</strong> earnings report today?
+                      </div>
+                      <div class="message from string-l">
+                        Considering adding to my position.
+                      </div>
+                      <div class="message to string-f">
+                        Yeah. Seems like mgmt is sandbagging guidance on expenses. Check out the transcript.
+                      </div>
+                      <div class="message to string-l">
+                        https://atom.finance/quote/FB/documents/transcripts/152E6CB9-4B48-4B4B-AE6A-D77694C762C7
+                      </div>
+                      <div class="message from string-f">
+                        Agree. They are still beating consensus even with the ramp-up in expenses.
+                      </div>
+                      <div class="message to string-f">
+                        Looks like EPS was $1.89 vs $1.63 consensus.
+                      </div>
+                      <div class="message to string-l">
+                        Stock is very cheap on 2020 EPS of ~$9.30
+                      </div>
+                      <div class="message from string-f">
+                        Yeah, and consensus numbers are too low IMO. See here:
+                        https://atom.finance/quote/FB/consensus/eps/annual
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- <p class="copy scroll-enter" data-entrance="basic-fade" data-offset="1" data-offset-mobile="1">
+                  
+                </p>-->
+              </div>
+            </div>
+          </section>                    
+          <section class="features destination" data-smooth-section>
+            <div class="container">
+              <h3 class="scroll-enter" style="margin:0 auto; margin-bottom: 20px; margin-top: 40px; font-size:90px;" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                VMAK Features
+              </h3>
+              <div
+                class="feature-grid scroll-enter"
+                data-entrance="feature-grid"
+                data-offset=".9"
+                data-offset-mobile="1"
+              >
+                <div class="feature">
+                  <div class="feature-interior" data-icon="quotes">
+                    <div>                          
+                      <img class="icons" src="images/icons/discord.png" onmouseover="hover(this,'discord');" onmouseout="unhover(this,'discord');">
+                    </div>
+
+                    <h5>Discord Community</h5>
+                    <p>
+                      A community of Trader and Business owners sharing information to collectively earn more income. Pure proven methods only no jargon.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="news">
+                    <div>
+                      <img class="icons" src="images/icons/weight-scale.png" onmouseover="hover(this,'weight-scale');" onmouseout="unhover(this,'weight-scale');">
+                    </div>
+                    <h5>Correct Position Sizing<br/> and Money Management</h5>
+                    <p>
+                      Allow our algorithm to give you back your sleep and peace of mind. Real Time Monitoring 24/7.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="analyst">
+                    <div>
+                      <img class="icons" src="images/icons/booklet.png">
+                    </div>
+                    <h5>26 Proprietary Features</h5>
+                    <p>
+                      We believe in real time features here at VMAK, 5years in the development to create our competitive A.I dynamic trading edge. 
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="charting">
+                    <div>
+                      <img class="icons" src="images/icons/kill-button.png" onmouseover="hover(this,'kill-button');" onmouseout="unhover(this,'kill-button');">
+                    </div>
+                    <h5>Safety Kill Switch</h5>
+                    <p>
+                      True professional money management. Our Algorithm will close all positions just in case any sudden market black swans 24/7.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="historical">
+                    <div>
+                      <img class="icons" src="images/icons/profile-chart.png" onmouseover="hover(this,'profile-chart');" onmouseout="unhover(this,'profile-chart');">
+                    </div>
+                    <h5>Dynamic Trend <br/> Detection</h5>
+                    <p>
+                      Most system trade one direction of the market. We believe in trading in a flow tread cycle. Micro and macro movements to capitalize all trends all week and year around.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="security">
+                    <div>
+                      <img class="icons" src="images/icons/interlock.png">
+                    </div>
+                    <h5>Triple Encrypted<br/> Algorithm</h5>
+                    <p>
+                      Any public system that is free is trash. We believe protecting our system and our clients trading account. Source code is hidden from broker as well.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="transcripts">
+                    <div>
+                      <img class="icons" src="images/icons/ai.png">
+                    </div>
+                    <h5>A.I Deep Learning</h5>
+                    <p>
+                      Astronomical data computation held in our multiple VPS to determine the next trade in real time. This is the bread and butter of our system.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="market">
+                    <div>
+                      <img class="icons" src="images/icons/security.png">
+                    </div>
+                    <h5>Dynamic Defensive <br/> Positioning</h5>
+                    <p>
+                      Protecting profits and positions is a key factor in our system. Real time positions will be open to add profits and protect at the same time. 
+                    </p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-interior" data-icon="message">
+                    <div>
+                      <img class="icons" src="images/icons/radar.png" onmouseover="hover(this,'radar');" onmouseout="unhover(this,'radar');">
+                    </div>
+                    <h5>Dynamic Take profit</h5>
+                    <p>
+                      Real time monitor to take advantage of moving markets to increase take profits. All TP/SL are hidden from brokers and users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <!--Affiliate Page-->
+            </div>
+            <div class="footer-measure-el"></div>
+          </section> 
+          <section class="features" data-smooth-section>
+            <div class="container">
+              <div
+                class="scroll-enter"
+                data-entrance="feature-grid"
+                data-offset="1"
+                data-offset-mobile="1">                  
+               <!-- Area for Affiliate -->            
+              </div>
+            </div>                  
+            <div class="footer-measure-el"></div>
+          </section> 
+          <section class="features last" data-smooth-section>
+            <div class="container" style="text-align: center;">
+              <h3 style="margin:0 auto; margin-top:20px;" class="scroll-enter" data-entrance="basic-fade" data-offset=".9" data-offset-mobile="1">
+                Contact Us
+              </h3>
+              <p class="vcp-dsc">we will get in contact with you.</p>
+            </div>            
+            <div class="flex contact-block">
+                <div class="feature-interior">
+                  <a href="#" class="iEoGWi icons-contact" style="border-color:#28a745;" onMouseOver="this.style.backgroundColor='#28a745'; this.style.color='white';" onMouseOut="this.style.backgroundColor='#393945';">Live Chat</a>
+                </div>
+                <div class="feature-interior">
+                  <a href="#" class="iEoGWi icons-contact" style="border-color:#0274be;" onMouseOver="this.style.backgroundColor='#0274be'; this.style.color='white';" onMouseOut="this.style.backgroundColor='#393945';">Messenger</a>
+                </div>
+                <div class="feature-interior">
+                  <a href="mailto:support@vmakcapital.com" class="iEoGWi icons-contact" style="border-color:#808285;" onMouseOver="this.style.backgroundColor='#808285'; this.style.color='white';" onMouseOut="this.style.backgroundColor='#393945';">Email</a>
+                </div>       
+            </div>                                                            
+          </section>          
+          <footer class="footer">
+            <div class="container" id="fixed-height">
+              <div class=" no-border-row">
+                <div class="flex space-between">
+                  <div class="flex">
+                    <!--<img class="main-logo botlogo" src="images/vmak-logo.png" alt="vmak Logo" />-->
+                  </div>                  
+                </div>
+              </div>          
+              <div class="footer-container  no-border-row" style="margin-top:60px;">
+                    <a href="/terms-of-service">Terms of Service</a>
+                    <span class="spacer"> | </span>                    
+                    <a href="/risks">Risks</a>
+                    <span class="spacer"> | </span>
+                    <a href="/policies">Policies</a>
+                    <span class="spacer"> | </span>
+                    <span>&copy;2019 VMAK Capital, LLC.</span>                                                         
+              </div>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="js/main.js" defer></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="newarea">
+            	<img class="downimage" src="images/results/vmakdown.png">
+                <h1 class="downtitle">VMAK Affiliate Program</h1>
+                <h5 class="downpara">Join our Affiliate Program & Promote Our Services
+Earn Surprising Amount!</h5>
+            </div>
+  </body>
+</html>
